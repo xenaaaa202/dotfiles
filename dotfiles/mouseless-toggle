@@ -1,0 +1,20 @@
+#!/bin/bash
+
+PID_FILE="/tmp/mouseless.pid"
+
+# Kill if already running
+if [ -f "$PID_FILE" ]; then
+    kill $(cat "$PID_FILE") 2>/dev/null && rm -f "$PID_FILE"
+    notify-send "Mouseless" "Stopped" -t 1000
+    exit 0
+fi
+
+# Start it
+notify-send "Mouseless" "Activated – hold Alt (10s timeout)" -t 1500
+~/go/bin/mouseless --config ~/.config/mouseless/config.yaml &
+echo $! > "$PID_FILE"
+
+# Auto-kill after exactly 10 seconds
+(sleep 10 && kill $(cat "$PID_FILE") 2>/dev/null && rm -f "$PID_FILE" && notify-send "Mouseless" "Timed out" -t 1000) &
+
+exit 0

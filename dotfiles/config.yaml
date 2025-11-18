@@ -1,0 +1,23 @@
+baseMouseSpeed: 900.0
+baseScrollSpeed: 25.0
+
+layers:
+  - name: initial
+    bindings:
+      leftalt: tap-hold-next leftalt ; toggle-layer mouse ; 300
+
+  - name: mouse
+    passThrough: false
+    bindings:
+      i: move 0 -1      # up
+      j: move -1 0      # left
+      k: move 0 1       # down
+      l: move 1 0       # right
+      a: button left
+      s: button middle
+      d: button right
+      equal: scroll up
+      minus: scroll down
+      leftshift: speed 3.0
+      leftctrl:  speed 0.3
+      q: layer initial   # press q to exit mouse layer
