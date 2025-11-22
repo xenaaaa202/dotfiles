@@ -1,0 +1,42 @@
+---------
+|firstly|
+---------
+
+- setup ollama
+
+-----------------------------------------
+|then your pretty much good to go man just install these models
+-----------------------------------------
+
+----------
+| models |
+----------
+
+tinydolphin:1.1b      
+deepcoder:1.5b       
+deepscaler:1.5b        
+falcon3:1b            
+qwen2.5:1.5b          
+granite3.1-moe:3b     
+smollm2:1.7b          
+stablelm-zephyr:3b      
+tinyllama:latest       
+
+
+----------
+|make dir|
+----------
+mkdir -p ~/ai/general/tinydolphin ~/ai/general/falcon3 ~/ai/general/smollm \\n         ~/ai/fast/tinyllama \\n         ~/ai/study/qwen2.5 ~/ai/study/stablelm-zephyr \\n         ~/ai/coding/deepcoder \\n         ~/ai/reasoning/deepscaler\n
+
+-------
+|alias|
+-------
+alias name = "~/xena.sh"
+
+---------------
+source ~/.zshrc
+---------------
+
+-------
+|enjoy|
+-------
