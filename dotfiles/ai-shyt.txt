@@ -1,0 +1,7 @@
+models                         niche
+falcon3:1b, smollm             fast chatting
+qwen2.5, zephyr                study,research
+deepcoder                      coding
+qwen,smollm                    linux help
+deepscaler                     long reasoning
+tinyllama                      low ram
