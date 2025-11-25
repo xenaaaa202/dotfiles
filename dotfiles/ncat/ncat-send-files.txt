@@ -1,0 +1,14 @@
+transfering files from ncat ::
+
+- things to know before hand : <ip addresses of /sender/reciever/>
+
+	then we are good to go i guess
+
+:: reciever is first ;
+	ncat -lvnp <port> > file
+
+:: sender is second ;
+	ncat <ip of reciever> <port> < file 
+	[enter]
+
+::: the file will be transfered ! 

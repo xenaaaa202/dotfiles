@@ -1,0 +1,9 @@
+-setting up ports
+
+<listener>
+:: ncat -lvnp <port> 
+
+<reciever/victim>
+:: ncat <ip of listerner> <port>
+
+::: straight forward i guess
